@@ -5,6 +5,10 @@ function Header() {
     <Head>
       <title>Tienda Experiencias</title>
       <meta name="description" content="Tienda Experiencias" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap"
+        rel="stylesheet"
+      />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );
