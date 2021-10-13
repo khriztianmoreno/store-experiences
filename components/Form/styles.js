@@ -9,22 +9,21 @@ export const RegisterForm = styled.form`
 export const LabelForm = styled.label`
   font-size: 14px;
   line-height: 18px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;
 
 export const InputForm = styled.input`
   height: 34px;
   border-radius: 4px;
-  margin-bottom: 25px;
+  margin: 5px 0px 25px;
 `;
 
 export const CheckForm = styled.input`
   width: 20px;
   height: 20px;
-  margin-top: 15px;
-
-  :checked {
-    background-color: #074ee8;
-  }
 `;
 
 export const ContainerCheck = styled.div`
@@ -57,4 +56,8 @@ export const TextForm = styled.span`
 export const AceptTerms = styled.label`
   font-size: 12px;
   line-height: 18px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 `;

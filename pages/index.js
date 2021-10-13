@@ -43,7 +43,7 @@ function Home() {
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
             <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
           </ProviderExperiences>
-          {/* <CopyRight /> */}
+          <CopyRight />
           <Circle />
         </FormContainer>
       </Main>
