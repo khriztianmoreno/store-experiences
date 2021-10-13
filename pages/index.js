@@ -1,5 +1,12 @@
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
+import {
+  Circle,
+  Divider,
+  FormContainer,
+  ImageContainer,
+  Main,
+  ProviderExperiences,
+  ProviderLinkExperience,
+} from '../styles/Home';
 
 import Header from '../components/Header';
 import SideImage from '../components/SideImage';
@@ -7,16 +14,16 @@ import Form from '../components/Form';
 import CopyRight from '../components/CopyRight';
 import Logo from '../components/Logo';
 
-export default function Home() {
+function Home() {
   return (
     <>
       <Header />
-      <main className={styles.main}>
-        <div className={styles.imageContainer}>
+      <Main>
+        <ImageContainer>
           <Logo />
           <SideImage />
-        </div>
-        <div className={styles.formContainer}>
+        </ImageContainer>
+        <FormContainer>
           <p>
             Vivir momentos únicos es quizá uno de los motivos que a muchos nos
             une como humanos.
@@ -30,15 +37,17 @@ export default function Home() {
           <p>Bienvenidos a Tienda Experiencias</p>
           <h3>Regístrate</h3>
           <Form />
-          <div className={styles.divider} />
-          <span className={styles.experience}>
+          <Divider />
+          <ProviderExperiences>
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
-            <a className={styles.linkExperience}> Ingresa aquí</a>
-          </span>
+            <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
+          </ProviderExperiences>
           {/* <CopyRight /> */}
-        </div>
-        <div className={styles.circle} />
-      </main>
+        </FormContainer>
+        <Circle />
+      </Main>
     </>
   );
 }
+
+export default Home;

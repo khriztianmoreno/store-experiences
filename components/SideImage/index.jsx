@@ -1,5 +1,6 @@
-import Image from 'next/image';
 import { useState, useEffect } from 'react';
+
+import { BackgroundContainer } from './styles';
 
 const baseImage = 'https://res.cloudinary.com/khriztianmoreno/image/upload/';
 const folder = 'tienda_experiencias';
@@ -13,11 +14,6 @@ const images = [
   `${baseImage}v1634005347/${folder}/guatape_zocalos.png`,
   `${baseImage}v1634005347/${folder}/experiencia_pareja.png`,
 ];
-
-const randomImage = () => {
-  const randomIndex = Math.floor(Math.random() * images.length);
-  return images[randomIndex];
-};
 
 function SideImage() {
   const [image, setImage] = useState(images[0]);
@@ -40,24 +36,10 @@ function SideImage() {
     setImage(images[index]);
   }, [index]);
 
-  // useEffect(() => {
-  //   const interval = setInterval(() => {
-  //     setImage(randomImage());
-  //   }, 5000);
-  //   return () => clearInterval(interval);
-  // }, []);
-
   return (
-    <div
-      style={{
-        backgroundImage: `url(${image})`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        height: '100vh',
-        transition: 'background-image 1s ease-in-out',
-      }}
-    />
+    <BackgroundContainer>
+      <img src={image} alt="Random Experiences" />
+    </BackgroundContainer>
   );
 }
 
