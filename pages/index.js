@@ -43,8 +43,8 @@ function Home() {
             <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
           </ProviderExperiences>
           {/* <CopyRight /> */}
+          <Circle />
         </FormContainer>
-        <Circle />
       </Main>
     </>
   );

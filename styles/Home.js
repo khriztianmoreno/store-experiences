@@ -18,6 +18,7 @@ export const Main = styled.main`
 export const ImageContainer = styled('div')(
   (props) => css`
     background-color: ${props.theme.colors.brightTurquoise};
+    position: relative;
 
     @media (min-width: 992px) {
       grid-area: 1 / 1 / 2 / 2;
@@ -33,6 +34,7 @@ export const FormContainer = styled('div')(
     flex-direction: column;
     font-size: 16px;
     padding: 30px 80px;
+    position: relative;
     text-align: left;
 
     @media (min-width: 992px) {
@@ -51,7 +53,7 @@ export const Circle = styled('div')(
       border-radius: 50%;
       display: block;
       height: 124px;
-      left: 54%;
+      left: -60px;
       position: absolute;
       top: 6%;
       width: 124px;
