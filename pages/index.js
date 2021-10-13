@@ -5,6 +5,7 @@ import Header from '../components/Header';
 import SideImage from '../components/SideImage';
 import Form from '../components/Form';
 import CopyRight from '../components/CopyRight';
+import Logo from '../components/Logo';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <div className={styles.imageContainer}>
+          <Logo />
           <SideImage />
         </div>
         <div className={styles.formContainer}>
@@ -35,6 +37,7 @@ export default function Home() {
           </span>
           {/* <CopyRight /> */}
         </div>
+        <div className={styles.circle} />
       </main>
     </>
   );

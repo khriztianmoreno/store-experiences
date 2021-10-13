@@ -1,19 +1,14 @@
 .main {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  grid-template-rows: 1fr;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  height: 100vh;
+  display: flex;
+  flex-direction: column-reverse;
+  position: relative;
 }
 
 .imageContainer {
-  grid-area: 1 / 1 / 2 / 2;
   background-color: #00f6bb;
 }
 
 .formContainer {
-  grid-area: 1 / 2 / 2 / 3;
   background-color: #010040;
   display: flex;
   color: #ffffff;
@@ -40,6 +35,50 @@
   height: 1px;
   background-color: #E5E5E5;
   margin: 60px 0px 10px 0px;
+  height: 80vh;
+}
+
+.circle {
+  display: none;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .main {
+    display: grid;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    height: 100vh;
+  }
+
+  .imageContainer {
+    background-color: #00f6bb;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .formContainer {
+    background-color: #010040;
+    grid-area: 1 / 2 / 2 / 3;
+    height: auto;
+  }
+
+  .circle {
+    display: block;
+    position: absolute;
+    top: 6%;
+    left: 54%;
+    /* transform: translate(-50%, -50%); */
+    height: 124px;
+    width: 124px;
+    border-radius: 50%;
+    background-color: #EFA893;
+  }
+
+  .logo {
+    width: 333px;
+  }
 }
 
 .bgWrap {
