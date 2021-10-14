@@ -10,7 +10,7 @@ import {
 
 import Header from '../components/Header';
 import SideImage from '../components/SideImage';
-import Form from '../components/Form';
+import RegisterForm from '../components/RegisterForm';
 import CopyRight from '../components/CopyRight';
 import Logo, { LogoMobile } from '../components/Logo';
 
@@ -25,6 +25,7 @@ function Home() {
         </ImageContainer>
         <FormContainer>
           <LogoMobile />
+          <h2>¿Buscando planes memorables?</h2>
           <p>
             Vivir momentos únicos es quizá uno de los motivos que a muchos nos
             une como humanos.
@@ -37,7 +38,7 @@ function Home() {
 
           <p>Bienvenidos a Tienda Experiencias</p>
           <h3>Regístrate</h3>
-          <Form />
+          <RegisterForm />
           <Divider />
           <ProviderExperiences>
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
