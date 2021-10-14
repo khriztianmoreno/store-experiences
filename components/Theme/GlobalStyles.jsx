@@ -6,6 +6,7 @@ export const GlobalStyles = createGlobalStyle`
     padding: 0;
     margin: 0;
     font-family: Duru Sans;
+    background-color: #010040;
   }
 
   a {

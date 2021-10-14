@@ -18,10 +18,11 @@ export const Main = styled.main`
 export const ImageContainer = styled('div')(
   (props) => css`
     background-color: ${props.theme.colors.brightTurquoise};
+    display: none;
     position: relative;
 
     @media (min-width: 992px) {
-      grid-area: 1 / 1 / 2 / 2;
+      display: block;
     }
   `
 );
@@ -33,6 +34,7 @@ export const FormContainer = styled('div')(
     display: flex;
     flex-direction: column;
     font-size: 16px;
+    height: 100%;
     padding: 30px 80px;
     position: relative;
     text-align: left;
