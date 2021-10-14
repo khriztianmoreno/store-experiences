@@ -12,7 +12,7 @@ import Header from '../components/Header';
 import SideImage from '../components/SideImage';
 import Form from '../components/Form';
 import CopyRight from '../components/CopyRight';
-import Logo from '../components/Logo';
+import Logo, { LogoMobile } from '../components/Logo';
 
 function Home() {
   return (
@@ -24,6 +24,7 @@ function Home() {
           <SideImage />
         </ImageContainer>
         <FormContainer>
+          <LogoMobile />
           <p>
             Vivir momentos únicos es quizá uno de los motivos que a muchos nos
             une como humanos.
