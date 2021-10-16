@@ -10,7 +10,7 @@ import {
 
 import Header from '../components/Header';
 import SideImage from '../components/SideImage';
-import Form from '../components/Form';
+import RegisterForm from '../components/RegisterForm';
 import CopyRight from '../components/CopyRight';
 import Logo, { LogoMobile } from '../components/Logo';
 
@@ -25,25 +25,32 @@ function Home() {
         </ImageContainer>
         <FormContainer>
           <LogoMobile />
+          <h2>¿Buscando planes memorables?</h2>
           <p>
-            Vivir momentos únicos es quizá uno de los motivos que a muchos nos
-            une como humanos.
+            Vivir momentos únicos que queden por siempre en la memoria es algo
+            en común que buscamos como personas.
           </p>
 
           <p>
-            Has llegado a la comunidad que te brindará experiencias únicas e
-            irrepetibles para vivir, compartir, regalar y recordar.
+            Vivir momentos únicos que queden por siempre en la memoria es algo
+            en común que buscamos como personas. Has llegado a la comunidad que
+            te brindará experiencias únicas e irrepetibles para vivir,
+            compartir, regalar y recordar.
           </p>
 
-          <p>Bienvenidos a Tienda Experiencias</p>
+          <p>
+            Registrate gratis para ser parte del grupo elegido para el
+            lanzamiento de experiencias personalizadas.{' '}
+          </p>
+
           <h3>Regístrate</h3>
-          <Form />
+          <RegisterForm />
           <Divider />
           <ProviderExperiences>
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
             <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
           </ProviderExperiences>
-          {/* <CopyRight /> */}
+          <CopyRight />
           <Circle />
         </FormContainer>
       </Main>
