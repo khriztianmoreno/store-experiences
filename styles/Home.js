@@ -9,9 +9,8 @@ export const Main = styled.main`
     display: grid;
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    grid-template-columns: 1.5fr 1fr;
+    grid-template-columns: 1.3fr 1fr;
     grid-template-rows: 1fr;
-    height: 100vh;
   }
 `;
 
@@ -31,17 +30,14 @@ export const FormContainer = styled('div')(
   (props) => css`
     background-color: ${props.theme.colors.stratos};
     color: ${props.theme.colors.white};
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    height: 100%;
-    padding: 30px 80px;
+    padding: 35px;
     position: relative;
     text-align: left;
 
     @media (min-width: 992px) {
       grid-area: 1 / 2 / 2 / 3;
       height: auto;
+      padding: 0 100px;
     }
   `
 );

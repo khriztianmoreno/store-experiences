@@ -27,16 +27,22 @@ function Home() {
           <LogoMobile />
           <h2>¿Buscando planes memorables?</h2>
           <p>
-            Vivir momentos únicos es quizá uno de los motivos que a muchos nos
-            une como humanos.
+            Vivir momentos únicos que queden por siempre en la memoria es algo
+            en común que buscamos como personas.
           </p>
 
           <p>
-            Has llegado a la comunidad que te brindará experiencias únicas e
-            irrepetibles para vivir, compartir, regalar y recordar.
+            Vivir momentos únicos que queden por siempre en la memoria es algo
+            en común que buscamos como personas. Has llegado a la comunidad que
+            te brindará experiencias únicas e irrepetibles para vivir,
+            compartir, regalar y recordar.
           </p>
 
-          <p>Bienvenidos a Tienda Experiencias</p>
+          <p>
+            Registrate gratis para ser parte del grupo elegido para el
+            lanzamiento de experiencias personalizadas.{' '}
+          </p>
+
           <h3>Regístrate</h3>
           <RegisterForm />
           <Divider />

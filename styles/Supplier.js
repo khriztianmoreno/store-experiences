@@ -6,6 +6,8 @@ export const Main = styled('main')(
     flex-direction: column-reverse;
     position: relative;
     color: ${props.theme.colors.stratos};
+    background-color: ${props.theme.colors.white};
+    margin-top: 50px;
 
     @media (min-width: 992px) {
       display: grid;

@@ -44,8 +44,8 @@ function Supplier() {
           <h2>Postula tu experiencia</h2>
           <SupplierForm />
         </FormContainer>
+        <CopyRight />
       </Main>
-      <CopyRight />
     </>
   );
 }
