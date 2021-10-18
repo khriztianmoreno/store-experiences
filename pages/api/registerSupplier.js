@@ -1,5 +1,5 @@
 import saveLead from '../../utils/airtable';
-import { UserSchema } from '../../utils/schemas';
+import { SupplierSchema } from '../../utils/schemas';
 import { validate } from '../../lib/middlewares/validation';
 
 async function handler(req, res) {
@@ -14,4 +14,4 @@ async function handler(req, res) {
   }
 }
 
-export default validate(UserSchema, handler);
+export default validate(SupplierSchema, handler);
