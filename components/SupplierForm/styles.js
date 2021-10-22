@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 export const Form = styled.form`
   display: flex;
@@ -15,7 +15,7 @@ export const InputForm = styled.input`
 export const ContainerCheck = styled.div`
   display: flex;
   flex-direction: row;
-  margin-bottom: 25px;
+  margin-bottom: 15px;
 
   div {
     display: flex;
@@ -28,15 +28,20 @@ export const ContainerCheck = styled.div`
   }
 `;
 
-export const ButtonForm = styled.button`
-  background-color: #f4ea0c;
-  height: 40px;
-  width: 200px;
-  border-radius: 4px;
-  font-size: 16px;
-  line-height: 18px;
-  margin-top: 10px;
-`;
+export const ButtonForm = styled('button')(
+  (props) => css`
+    background-color: ${props.theme.colors.yellow};
+    background-color: #f4ea0c;
+    height: 40px;
+    width: 200px;
+    border: 0px;
+    border-radius: 4px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-top: 10px;
+    color: ${props.theme.colors.stratos};
+  `
+);
 
 export const TextForm = styled.span`
   font-size: 14px;

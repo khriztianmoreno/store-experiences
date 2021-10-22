@@ -3,59 +3,87 @@ import styled, { css } from 'styled-components';
 export const Main = styled('main')(
   (props) => css`
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     position: relative;
-    color: ${props.theme.colors.stratos};
-    background-color: ${props.theme.colors.white};
+    background-color: ${props.theme.colors.grey};
     margin-top: 50px;
+    color: ${props.theme.colors.stratos};
 
     @media (min-width: 992px) {
       display: grid;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
-      grid-template-columns: 1.5fr 1fr;
       grid-template-rows: 1fr;
-      height: 100vh;
+
+      div.supplier {
+        display: grid;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        grid-template-columns: 1.3fr 1fr;
+        grid-template-rows: 1fr;
+      }
     }
   `
 );
 
-export const FormContainer = styled('div')(
-  (props) => css`
-    background-color: ${props.theme.colors.white};
-    color: ${props.theme.colors.stratos};
-    display: flex;
-    flex-direction: column;
-    font-size: 16px;
-    padding: 30px 80px;
-    position: relative;
-    text-align: left;
-
-    @media (min-width: 992px) {
-      grid-area: 1 / 2 / 2 / 3;
-      height: auto;
-    }
-  `
-);
-
-export const Container = styled.div`
+export const FormContainer = styled.div`
   display: flex;
   flex-direction: column;
+  font-size: 16px;
+  padding: 0px 35px;
   position: relative;
-  padding: 80px 0px 80px 80px;
-  align-items: center;
-  justify-content: center;
+  text-align: left;
 
-  h2 {
-    width: 50%;
+  @media (min-width: 992px) {
+    height: auto;
+    padding: 50px 100px 0px 50px;
   }
+`;
+
+export const Container = styled.div`
+  padding: 0px 35px;
 
   div.content {
-    margin-top: 80px;
-    display: flex;
+    display: none;
+  }
 
-    div:first-of-type {
-      margin-right: 80px;
+  @media (min-width: 992px) {
+    padding: 50px 50px 0 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+
+    div.content {
+      display: flex;
+      text-align: justify;
+
+      h2 {
+        text-align: center;
+      }
+
+      div:first-of-type {
+        margin-right: 60px;
+      }
     }
   }
 `;
+
+export const Categories = styled('div')(
+  (props) => css`
+    display: none;
+
+    @media (min-width: 992px) {
+      display: flex;
+      div {
+        width: 85px;
+        height: 85px;
+        background-color: ${props.theme.colors.electricViolet};
+        margin-right: 20px;
+      }
+
+      div:last-of-type {
+        margin-right: 0px;
+      }
+    }
+  `
+);

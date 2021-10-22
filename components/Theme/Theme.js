@@ -5,6 +5,8 @@ const colors = {
   stratos: '#010040',
   tacao: '#EFA893',
   white: '#ffffff',
+  yellow: '#F4EA0C',
+  grey: '#E5E5E5',
 };
 
 export default {
