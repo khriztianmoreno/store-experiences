@@ -6,7 +6,6 @@ export const Main = styled('main')(
     flex-direction: column;
     position: relative;
     background-color: ${props.theme.colors.grey};
-    margin-top: 50px;
     color: ${props.theme.colors.stratos};
 
     @media (min-width: 992px) {
@@ -39,10 +38,16 @@ export const FormContainer = styled.div`
 `;
 
 export const Container = styled.div`
-  padding: 0px 35px;
+  padding: 50px 35px 0px;
+  text-align: center;
 
   div.content {
-    display: none;
+    text-align: justify;
+
+    h2 {
+      text-align: center;
+      margin-top: 50px;
+    }
   }
 
   @media (min-width: 992px) {
@@ -59,6 +64,7 @@ export const Container = styled.div`
 
       h2 {
         text-align: center;
+        margin-top: 0px;
       }
 
       div:first-of-type {
@@ -70,7 +76,18 @@ export const Container = styled.div`
 
 export const Categories = styled('div')(
   (props) => css`
-    display: none;
+    display: flex;
+    div {
+      width: 85px;
+      height: 85px;
+      border-radius: 50%;
+      background-color: ${props.theme.colors.electricViolet};
+      margin-right: 20px;
+    }
+
+    div:last-of-type {
+      margin-right: 0px;
+    }
 
     @media (min-width: 992px) {
       display: flex;

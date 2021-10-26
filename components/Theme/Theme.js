@@ -9,6 +9,12 @@ const colors = {
   grey: '#E5E5E5',
 };
 
+const fonts = {
+  duruSans: 'Duru Sans',
+  droidSans: 'Droid Sans',
+};
+
 export default {
   colors,
+  fonts,
 };

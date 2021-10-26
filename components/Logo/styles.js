@@ -7,7 +7,7 @@ export const LogoContainer = styled('div')(
     padding: 18px 56px;
 
     img {
-      width: 232px;
+      width: ${props.small ? '140px' : '232px'};
     }
 
     @media (min-width: 992px) {

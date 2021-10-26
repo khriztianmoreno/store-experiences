@@ -36,13 +36,17 @@ export const ButtonForm = styled('button')(
     border: 0px;
     margin-top: 10px;
     color: ${props.theme.colors.stratos};
+    font-family: ${props.theme.fonts.duruSans};
   `
 );
 
-export const TextForm = styled.span`
-  font-size: 14px;
-  line-height: 16px;
-`;
+export const TextForm = styled('span')(
+  (props) => css`
+    font-size: 14px;
+    line-height: 16px;
+    font-family: ${props.theme.fonts.duruSans};
+  `
+);
 
 export const AceptTerms = styled.label`
   margin-top: 15px;

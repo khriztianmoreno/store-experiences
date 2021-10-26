@@ -40,14 +40,18 @@ export const ButtonForm = styled('button')(
     line-height: 18px;
     margin-top: 10px;
     color: ${props.theme.colors.stratos};
+    font-family: ${props.theme.fonts.duruSans};
   `
 );
 
-export const TextForm = styled.span`
-  font-size: 14px;
-  line-height: 16px;
-  color: #010040;
-`;
+export const TextForm = styled('span')(
+  (props) => css`
+    font-size: 14px;
+    line-height: 16px;
+    color: ${props.theme.colors.stratos};
+    font-family: ${props.theme.fonts.duruSans};
+  `
+);
 
 export const TextareaForm = styled.textarea`
   height: 100px;

@@ -1,17 +1,18 @@
 import { FormContainer, Main, Container, Categories } from '../styles/Supplier';
 import Header from '../components/Header';
 import CopyRight from '../components/CopyRight';
-import Logo from '../components/Logo';
+import Logo, { LogoMobile } from '../components/Logo';
 import SupplierForm from '../components/SupplierForm';
 
 function Supplier() {
   return (
     <>
       <Header />
+      <Logo small />
+      <LogoMobile />
       <Main>
         <div className="supplier">
           <Container>
-            <Logo />
             <h2>
               Hemos lledago al mercadeo de Antioquia para posicionar el Turismo
               Experiencial
