@@ -21,6 +21,19 @@ export const GlobalStyles = createGlobalStyle`
   input[type="text"]
   {
     font-size: 18px;
+    border: 2px solid #AAAAAA;
+  }
+
+  input[type="email"]
+  {
+    font-size: 18px;
+    border: 2px solid #AAAAAA;
+  }
+
+  textarea
+  {
+    font-size: 18px;
+    border: 2px solid #AAAAAA;
   }
 
   input[type="checkbox"] {
@@ -44,6 +57,7 @@ export const GlobalStyles = createGlobalStyle`
 
   input:checked ~ .checkmark {
     background-color: #074EE8;
+    border: 0px;
   }
 
   .checkmark:after {
@@ -70,8 +84,8 @@ export const GlobalStyles = createGlobalStyle`
     user-select: none;
 
     > .checkmark:after {
-      left: 5px;
-      top: 1px;
+      left: 7px;
+      top: 3px;
       width: 3px;
       height: 8px;
       border: solid white;

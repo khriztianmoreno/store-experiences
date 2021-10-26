@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 import {
   Circle,
   Divider,
@@ -48,7 +50,9 @@ function Home() {
           <Divider />
           <ProviderExperiences>
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
-            <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
+            <Link href="/supplier">
+              <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
+            </Link>
           </ProviderExperiences>
           <CopyRight />
           <Circle />
