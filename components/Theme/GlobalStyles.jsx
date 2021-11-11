@@ -5,7 +5,7 @@ export const GlobalStyles = createGlobalStyle`
   body {
     padding: 0;
     margin: 0;
-    font-family: Duru Sans;
+    font-family: Droid Sans;
     background-color: #010040;
   }
 
@@ -16,6 +16,10 @@ export const GlobalStyles = createGlobalStyle`
 
   * {
     box-sizing: border-box;
+  }
+
+  p {
+    font-family: Duru Sans;
   }
 
   input[type="text"]
@@ -82,6 +86,7 @@ export const GlobalStyles = createGlobalStyle`
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    font-family: Duru Sans;
 
     > .checkmark:after {
       left: 7px;

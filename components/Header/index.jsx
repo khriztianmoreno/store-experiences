@@ -9,6 +9,10 @@ function Header() {
         href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap"
         rel="stylesheet"
       />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Droid+Sans&display=swap"
+        rel="stylesheet"
+      />
       <link rel="icon" href="/favicon.ico" />
     </Head>
   );
