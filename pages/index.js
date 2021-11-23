@@ -51,7 +51,7 @@ function Home() {
           <ProviderExperiences>
             ¿Ofreces experiencias que quisieras incluir en nuestro portafolio?.
             <Link href="/supplier">
-              <ProviderLinkExperience> Ingresa aquí</ProviderLinkExperience>
+              <ProviderLinkExperience>Ingresa aquí</ProviderLinkExperience>
             </Link>
           </ProviderExperiences>
           <CopyRight />

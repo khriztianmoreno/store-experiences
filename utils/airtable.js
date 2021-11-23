@@ -16,7 +16,7 @@ function saveLead(lead) {
     'Espirituales y Relajacion': !!lead?.spiritualRelaxation,
     Romanticas: !!lead?.romantic,
     Gastronomicas: !!lead?.gastronomics,
-    Cultural: !!lead?.cultural,
+    Cultural: !!lead?.culture,
     'Estilo de vida Exclusivo': !!lead?.exclusiveLifestyle,
     Instagram: lead?.instagram,
     Description: lead?.description,

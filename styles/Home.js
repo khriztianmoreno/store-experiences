@@ -76,8 +76,10 @@ export const ProviderExperiences = styled.span`
 export const ProviderLinkExperience = styled('a')(
   (props) => css`
     color: ${props.theme.colors.electricViolet};
+    cursor: pointer;
     font-size: 12px;
     line-height: 16px;
     text-decoration: underline;
+    padding-left: 10px;
   `
 );
