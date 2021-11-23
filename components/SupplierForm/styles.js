@@ -31,16 +31,21 @@ export const ContainerCheck = styled.div`
 export const ButtonForm = styled('button')(
   (props) => css`
     background-color: ${props.theme.colors.yellow};
-    background-color: #f4ea0c;
-    height: 40px;
-    width: 200px;
-    border: 0px;
+    background-color: ${props.theme.colors.yellow};
     border-radius: 4px;
-    font-size: 16px;
-    line-height: 18px;
-    margin-top: 10px;
+    border: 0px;
     color: ${props.theme.colors.stratos};
     font-family: ${props.theme.fonts.duruSans};
+    font-size: 16px;
+    height: 40px;
+    line-height: 18px;
+    margin-top: 10px;
+    width: 200px;
+
+    &:disabled {
+      background-color: #7d7a30;
+      cursor: not-allowed;
+    }
   `
 );
 
@@ -59,10 +64,12 @@ export const TextareaForm = styled.textarea`
 `;
 
 export const AceptTerms = styled.label`
-  margin-top: 15px;
+  align-items: center;
   display: flex;
   flex-direction: row;
-  align-items: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
   label {
     font-size: 12px;
     line-height: 18px;

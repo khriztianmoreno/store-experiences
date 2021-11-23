@@ -2,7 +2,7 @@ import Joi from 'joi';
 
 const profile = {
   email: Joi.string().email().required(),
-  name: Joi.string().alphanum().required(),
+  name: Joi.string().min(3).max(50).required(),
   perfilType: Joi.string().required(),
 };
 
@@ -13,18 +13,21 @@ const expiriencesType = {
   spiritualRelaxation: Joi.boolean(),
   romantic: Joi.boolean(),
   gastronomics: Joi.boolean(),
-  cultural: Joi.boolean(),
+  culture: Joi.boolean(),
   exclusiveLifestyle: Joi.boolean(),
 };
 
 export const UserSchema = Joi.object({
   ...profile,
   ...expiriencesType,
+  aceptTerms: Joi.boolean().required(),
 });
 
 export const SupplierSchema = Joi.object({
   ...profile,
-  phone: Joi.number().required(),
-  description: Joi.string().alphanum(),
-  instagram: Joi.string().alphanum(),
+  ...expiriencesType,
+  phone: Joi.string().required(),
+  description: Joi.string().min(3),
+  instagram: Joi.string().min(3),
+  aceptTerms: Joi.boolean().required(),
 });
