@@ -51,10 +51,11 @@ export const ButtonForm = styled('button')(
 
 export const TextForm = styled('span')(
   (props) => css`
-    font-size: 14px;
-    line-height: 16px;
     color: ${props.theme.colors.stratos};
     font-family: ${props.theme.fonts.duruSans};
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 5px;
   `
 );
 
