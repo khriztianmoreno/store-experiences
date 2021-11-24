@@ -1,4 +1,5 @@
 const colors = {
+  alto: '#D9D9D9',
   brightTurquoise: '#00F6BB',
   electricViolet: '#6B18F4',
   mercury: '#E5E5E5',

@@ -1,12 +1,19 @@
 import styled, { css } from 'styled-components';
 
+export const Root = styled('div')(
+  (props) => css`
+    background-color: ${props.theme.colors.grey};
+    min-height: 100vh;
+  `
+);
+
 export const Main = styled('main')(
   (props) => css`
+    background-color: ${props.theme.colors.grey};
+    color: ${props.theme.colors.stratos};
     display: flex;
     flex-direction: column;
     position: relative;
-    background-color: ${props.theme.colors.grey};
-    color: ${props.theme.colors.stratos};
 
     @media (min-width: 992px) {
       display: grid;
@@ -20,6 +27,36 @@ export const Main = styled('main')(
         grid-template-rows: 1fr;
       }
     }
+  `
+);
+
+export const Title = styled.h2`
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 65px;
+  text-align: center;
+
+  /* @media (min-width: 992px) {
+    margin-top: 100px;
+  } */
+`;
+
+export const ContainerBlock = styled.div`
+  margin-bottom: 80px;
+  min-height: 250px;
+  position: relative;
+`;
+
+export const ContainerBlockTitle = styled('h2')(
+  (props) => css`
+    font-family: ${props.theme.fonts.droidSans};
+    font-size: 24px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 24px;
+    margin-bottom: 40px;
+    text-align: center;
   `
 );
 
@@ -43,11 +80,6 @@ export const Container = styled.div`
 
   div.content {
     text-align: justify;
-
-    h2 {
-      text-align: center;
-      margin-top: 50px;
-    }
   }
 
   @media (min-width: 992px) {
@@ -60,47 +92,73 @@ export const Container = styled.div`
 
     div.content {
       display: flex;
+      gap: 50px;
       text-align: justify;
 
       h2 {
         text-align: center;
         margin-top: 0px;
       }
-
-      div:first-of-type {
-        margin-right: 60px;
-      }
     }
   }
 `;
 
-export const Categories = styled('div')(
+export const Categories = styled.div`
+  display: flex;
+  gap: 15px 30px;
+  margin-bottom: 40px;
+  overflow-x: scroll;
+
+  @media (min-width: 992px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px 30px;
+  }
+`;
+
+export const CategoryCard = styled('div')(
   (props) => css`
-    display: flex;
-    div {
-      width: 85px;
-      height: 85px;
-      border-radius: 50%;
-      background-color: ${props.theme.colors.electricViolet};
-      margin-right: 20px;
-    }
+    background-color: ${props.theme.colors.alto};
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.25);
+    max-width: 120px;
+    padding: 10px;
 
-    div:last-of-type {
-      margin-right: 0px;
+    p {
+      color: ${props.theme.colors.stratos};
+      font-family: ${props.theme.fonts.duruSans};
+      font-size: 14px;
+      font-style: normal;
+      font-weight: bold;
+      line-height: 15px;
     }
+  `
+);
 
-    @media (min-width: 992px) {
-      display: flex;
-      div {
-        width: 85px;
-        height: 85px;
-        background-color: ${props.theme.colors.electricViolet};
-        margin-right: 20px;
-      }
+export const Messages = styled.div`
+  position: absolute;
+  z-index: 2;
 
-      div:last-of-type {
-        margin-right: 0px;
-      }
-    }
+  /* @media (min-width: 992px) {
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 400px;
+  } */
+`;
+
+export const Circle = styled('div')(
+  (props) => css`
+    background-color: ${props.theme.colors.brightTurquoise};
+    border-radius: 50%;
+    height: 208px;
+    left: 0;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: 0;
+    width: 208px;
   `
 );
