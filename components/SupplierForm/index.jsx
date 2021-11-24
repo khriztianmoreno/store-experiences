@@ -34,7 +34,7 @@ function SupplierForm() {
 
     try {
       await registerdLead(newLead, 'registerSupplier');
-      router.push('/success');
+      router.push('/success?type=supplier');
     } catch (error) {
       console.error(error);
     }

@@ -33,7 +33,7 @@ function RegisterForm() {
 
     try {
       await registerdLead(newLead, 'registerLead');
-      router.push('/success');
+      router.push('/success?type=user');
     } catch (error) {
       console.error(error);
     }
