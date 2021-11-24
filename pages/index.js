@@ -11,6 +11,7 @@ import {
 } from '../styles/Home';
 
 import Header from '../components/Header';
+import Layout from '../components/Layout';
 import SideImage from '../components/SideImage';
 import RegisterForm from '../components/RegisterForm';
 import CopyRight from '../components/CopyRight';
@@ -18,7 +19,7 @@ import Logo, { LogoMobile } from '../components/Logo';
 
 function Home() {
   return (
-    <>
+    <Layout>
       <Header />
       <Main>
         <ImageContainer>
@@ -58,7 +59,7 @@ function Home() {
           <Circle />
         </FormContainer>
       </Main>
-    </>
+    </Layout>
   );
 }
 
