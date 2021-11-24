@@ -2,10 +2,9 @@ import Header from '../components/Header';
 import CopyRight from '../components/CopyRight';
 import Logo, { LogoMobile } from '../components/Logo';
 import SupplierForm from '../components/SupplierForm';
+import Categories from '../components/Categories';
 
 import {
-  Categories,
-  CategoryCard,
   Circle,
   Container,
   ContainerBlock,
@@ -15,45 +14,9 @@ import {
   Messages,
   Root,
   Title,
+  CategoryMobileContianer,
+  CategoryDesktopContianer,
 } from '../styles/Supplier';
-
-const BASE_IMG_URL =
-  'https://res.cloudinary.com/khriztianmoreno/image/upload/v1637719906/tienda_experiencias/cat/';
-
-const categories = [
-  {
-    img: 'sticker_1.png',
-    title: 'Naturaleza',
-  },
-  {
-    img: 'sticker_8.png',
-    title: 'Románticos',
-  },
-  {
-    img: 'sticker_7.png',
-    title: 'Espiritualidad y Relajación',
-  },
-  {
-    img: 'sticker_6.png',
-    title: 'Cultural',
-  },
-  {
-    img: 'sticker_5.png',
-    title: 'Turismo',
-  },
-  {
-    img: 'sticker_4.png',
-    title: 'Estilo de vida exclusivo',
-  },
-  {
-    img: 'sticker_3.png',
-    title: 'Gastronómico',
-  },
-  {
-    img: 'sticker_2.png',
-    title: 'Aventura',
-  },
-];
 
 function Supplier() {
   return (
@@ -104,18 +67,13 @@ function Supplier() {
                 </Messages>
               </ContainerBlock>
             </div>
-            <Categories>
-              {categories.map((category) => (
-                <CategoryCard key={category.img}>
-                  <img
-                    src={`${BASE_IMG_URL}${category.img}`}
-                    alt={category.title}
-                  />
-                  <p>{category.title}</p>
-                </CategoryCard>
-              ))}
-            </Categories>
+            <CategoryDesktopContianer>
+              <Categories />
+            </CategoryDesktopContianer>
           </Container>
+          <CategoryMobileContianer>
+            <Categories />
+          </CategoryMobileContianer>
           <FormContainer>
             <h2>Postula tu experiencia</h2>
             <SupplierForm />
