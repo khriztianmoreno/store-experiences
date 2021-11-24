@@ -1,10 +1,12 @@
 import Head from 'next/head';
 
+import Seo from '../../components/Seo';
+
 function Header() {
   return (
     <Head>
-      <title>Tienda Experiencias</title>
-      <meta name="description" content="Tienda Experiencias" />
+      <title>Planes para el día a día - Tienda Experiencias</title>
+      <Seo />
       <link
         href="https://fonts.googleapis.com/css2?family=Duru+Sans&display=swap"
         rel="stylesheet"
