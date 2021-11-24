@@ -36,15 +36,11 @@ export const Title = styled.h2`
   line-height: 24px;
   margin-bottom: 65px;
   text-align: center;
-
-  /* @media (min-width: 992px) {
-    margin-top: 100px;
-  } */
 `;
 
 export const ContainerBlock = styled.div`
   margin-bottom: 80px;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
 `;
 
@@ -94,11 +90,24 @@ export const Container = styled.div`
       display: flex;
       gap: 50px;
       text-align: justify;
+      margin-bottom: 50px;
 
       h2 {
         text-align: center;
         margin-top: 0px;
       }
+    }
+  }
+
+  @media (min-width: 1200px) {
+    div.content {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (min-width: 1350px) {
+    div.content {
+      margin-bottom: 0;
     }
   }
 `;
@@ -108,6 +117,7 @@ export const Categories = styled.div`
   gap: 15px 30px;
   margin-bottom: 40px;
   overflow-x: scroll;
+  padding: 10px 15px 15px;
 
   @media (min-width: 992px) {
     display: grid;
