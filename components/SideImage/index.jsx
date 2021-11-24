@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { motion } from 'framer-motion';
 
 import { BackgroundContainer } from './styles';
 
@@ -15,7 +16,7 @@ const images = [
   `${baseImage}v1634005347/${folder}/experiencia_pareja.png`,
 ];
 
-function SideImage() {
+const Image = () => {
   const [image, setImage] = useState(images[0]);
   const [index, setIndex] = useState(0);
 
@@ -37,9 +38,25 @@ function SideImage() {
   }, [index]);
 
   return (
-    <BackgroundContainer>
+    <motion.figure>
       <img src={image} alt="Random Experiences" />
-    </BackgroundContainer>
+    </motion.figure>
+  );
+};
+
+function SideImage() {
+  return (
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ delay: 0.1 }}
+    >
+      <BackgroundContainer>
+        <motion.figure>
+          <Image />
+        </motion.figure>
+      </BackgroundContainer>
+    </motion.div>
   );
 }
 
