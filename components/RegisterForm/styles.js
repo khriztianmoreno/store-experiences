@@ -27,7 +27,6 @@ export const ContainerCheck = styled.div`
 export const ButtonForm = styled('button')(
   (props) => css`
     background-color: ${props.theme.colors.yellow};
-    background-color: ${props.theme.colors.yellow};
     border-radius: 4px;
     border: 0px;
     color: ${props.theme.colors.stratos};
@@ -39,7 +38,7 @@ export const ButtonForm = styled('button')(
     width: 200px;
 
     &:disabled {
-      background-color: #7d7a30;
+      opacity: 0.5;
       cursor: not-allowed;
     }
   `

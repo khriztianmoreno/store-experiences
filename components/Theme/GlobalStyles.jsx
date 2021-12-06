@@ -27,21 +27,17 @@ export const GlobalStyles = createGlobalStyle`
     font-family: Duru Sans;
   }
 
-  input[type="text"]
+  input
   {
     font-size: 18px;
-    border: 2px solid #AAAAAA;
-  }
-
-  input[type="email"]
-  {
-    font-size: 18px;
+    background-color: #ffffff;
     border: 2px solid #AAAAAA;
   }
 
   textarea
   {
     font-size: 18px;
+    background-color: #ffffff;
     border: 2px solid #AAAAAA;
   }
 
@@ -60,7 +56,7 @@ export const GlobalStyles = createGlobalStyle`
     height: 20px;
     width: 20px;
     border: 2px solid #AAAAAA;
-    background-color: #fff;
+    background-color: #ffffff;
     border-radius: 2px;
   }
 
@@ -103,6 +99,12 @@ export const GlobalStyles = createGlobalStyle`
       -webkit-transform: rotate(45deg);
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
+    }
+  }
+
+  @media screen and (prefers-color-scheme: dark) {
+    input {
+      background-color: white;
     }
   }
 `;
