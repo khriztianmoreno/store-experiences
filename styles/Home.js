@@ -26,6 +26,57 @@ export const ImageContainer = styled('div')(
   `
 );
 
+export const ImageContainerMobile = styled('div')(
+  (props) => css`
+    display: flex;
+    position: relative;
+    margin-bottom: 70px;
+    height: 130px;
+    align-items: center;
+
+    h2 {
+      width: 50%;
+      font-size: large;
+      padding-right: 10px;
+    }
+
+    .circle {
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      background-color: ${props.theme.colors.tacao};
+      z-index: 9;
+      left: 0;
+      bottom: -40px;
+      position: absolute;
+      right: 0;
+      margin: auto;
+    }
+
+    > div {
+      width: 50%;
+
+      right: -35px;
+      img {
+        height: 130px;
+      }
+    }
+
+    @media (min-width: 992px) {
+      margin-bottom: 0px;
+      height: auto;
+
+      h2 {
+        width: 100%;
+      }
+
+      > div {
+        display: none;
+      }
+    }
+  `
+);
+
 export const FormContainer = styled('div')(
   (props) => css`
     background-color: ${props.theme.colors.stratos};
