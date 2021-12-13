@@ -36,11 +36,6 @@ function Home() {
           </ImageContainerMobile>
           <p>
             Vivir momentos únicos que queden por siempre en la memoria es algo
-            en común que buscamos como personas.
-          </p>
-
-          <p>
-            Vivir momentos únicos que queden por siempre en la memoria es algo
             en común que buscamos como personas. Has llegado a la comunidad que
             te brindará experiencias únicas e irrepetibles para vivir,
             compartir, regalar y recordar.
