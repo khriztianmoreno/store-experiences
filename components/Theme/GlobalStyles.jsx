@@ -25,6 +25,7 @@ export const GlobalStyles = createGlobalStyle`
 
   p {
     font-family: Duru Sans;
+    text-align: justify;
   }
 
   input[type="text"]

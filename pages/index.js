@@ -8,6 +8,7 @@ import {
   Main,
   ProviderExperiences,
   ProviderLinkExperience,
+  ImageContainerMobile,
 } from '../styles/Home';
 
 import Header from '../components/Header';
@@ -28,7 +29,11 @@ function Home() {
         </ImageContainer>
         <FormContainer>
           <LogoMobile />
-          <h2>¿Buscando planes memorables?</h2>
+          <ImageContainerMobile>
+            <h2>¿Buscando planes memorables?</h2>
+            <div className="circle" />
+            <SideImage />
+          </ImageContainerMobile>
           <p>
             Vivir momentos únicos que queden por siempre en la memoria es algo
             en común que buscamos como personas.
